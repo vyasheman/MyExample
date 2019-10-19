@@ -1,15 +1,17 @@
-package com.example.json.JsonProcessorExample;
+package com.example.json.model;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
 
 
+@Component
 public class JsonRequest {
 
-	private String requestId;
-	private String emailAddress;
+	public String requestId;
+	public String emailAddress;
 	
-	private List<Person> people;
+	public List<Person> people;
 
 	public String getRequestId() {
 		return requestId;
@@ -35,4 +37,7 @@ public class JsonRequest {
 		this.people = people;
 	}
 
+	
+	
+	
 }

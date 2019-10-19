@@ -1,4 +1,4 @@
-package com.example.json.JsonProcessorExample;
+package com.example.json;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

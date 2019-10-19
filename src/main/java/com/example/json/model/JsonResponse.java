@@ -1,8 +1,12 @@
-package com.example.json.JsonProcessorExample;
+package com.example.json.model;
 
-public class JsonRespone {
+import org.springframework.stereotype.Component;
+
+@Component
+public class JsonResponse {
 	private String status="";		// 200 Successful 400 error 
 	private String deails;
+
 	public String getStatus() {
 		return status;
 	}
@@ -15,5 +19,11 @@ public class JsonRespone {
 	public void setDeails(String deails) {
 		this.deails = deails;
 	}
+	@Override
+	public String toString() {
+		return "JsonRespone [status=" + status + ", deails=" + deails + "]";
+	}
+	
+	
 	
 }
